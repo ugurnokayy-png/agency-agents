@@ -44,15 +44,33 @@ Have an idea for a specialized agent? Great! Here's how to add one:
    > `scripts/convert.sh` and `scripts/lint-agents.sh`. The check fails the build
    > unless all of these agree and the directory contains at least one agent file.
    >
-   > Note: `strategy/` (NEXUS playbooks/runbooks — no agent frontmatter) and
-   > `integrations/` (generated per-tool output from `convert.sh`) are **not**
-   > divisions and must never be added to the division lists.
+   > Note: `strategy/` (NEXUS playbooks/runbooks — no agent frontmatter),
+   > `integrations/` (generated per-tool output from `convert.sh`), and
+   > `skills/` (hand-written Claude Skills — see below) are **not** divisions
+   > and must never be added to the division lists.
 
 3. **Create your agent file** following the template below
 4. **Test your agent** in real scenarios
 5. **Submit a Pull Request** with your agent
 
-### 2. Improve Existing Agents
+### 2. Create a New Skill
+
+Not every contribution is an agent persona. [`skills/`](skills/) holds
+standalone **Claude Skills** — task-focused `SKILL.md` procedures with no
+identity or personality, meant to be used directly by Claude Code or any
+other Agent-Skills-compatible host (e.g. "how to pick an agent from the
+roster for a task," as opposed to a specialist persona that does the task).
+
+1. Read [`skills/README.md`](skills/README.md) for the format and how it
+   differs from an agent definition.
+2. Check the table there for overlap with an existing skill.
+3. Add `skills/<skill-name>/SKILL.md` with `name` + `description`
+   frontmatter and an instructions body, and add a row to the table.
+4. `skills/` is not a division — don't touch `divisions.json`,
+   `scripts/check-divisions.sh`, `scripts/convert.sh`, or
+   `scripts/lint-agents.sh` for a plain skill addition.
+
+### 3. Improve Existing Agents
 
 Found a way to make an agent better? Contributions welcome:
 
@@ -62,7 +80,7 @@ Found a way to make an agent better? Contributions welcome:
 - Add success metrics and benchmarks
 - Fix typos, improve clarity, enhance documentation
 
-### 3. Share Success Stories
+### 4. Share Success Stories
 
 Used these agents successfully? Share your story:
 
@@ -71,7 +89,7 @@ Used these agents successfully? Share your story:
 - Write a blog post and link it
 - Create a video tutorial
 
-### 4. Report Issues
+### 5. Report Issues
 
 Found a problem? Let us know:
 

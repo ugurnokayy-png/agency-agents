@@ -632,6 +632,19 @@ See the **[Nexus Spatial Discovery Exercise](examples/nexus-spatial-discovery.md
 
 ---
 
+## 🧩 Skills Directory
+
+Alongside the agent roster, [`skills/`](skills/) holds standalone **Claude
+Skills** — task-focused `SKILL.md` procedures with no persona, meant to be
+used directly by Claude Code or any Agent-Skills-compatible host. Where an
+agent is a specialist persona you activate, a skill is a repeatable procedure
+Claude follows when triggered, e.g. picking the right agent for a task or
+scaffolding a new one.
+
+See [`skills/README.md`](skills/README.md) for the full list and the format.
+
+---
+
 ## 🤝 Contributing
 
 We welcome contributions! Here's how you can help:
@@ -1060,6 +1073,7 @@ When you add new agents or edit existing ones, regenerate all integration files:
 
 - [ ] Interactive agent selector web tool
 - [x] Multi-agent workflow examples -- see [examples/](examples/)
+- [x] Standalone Claude Skills for using/contributing to the roster -- see [skills/](skills/)
 - [x] Multi-tool integration scripts (Claude Code, GitHub Copilot, Antigravity, Gemini CLI, OpenCode, OpenClaw, Cursor, Aider, Windsurf, Qwen Code, Kimi Code, Codex, Osaurus, Hermes)
 - [ ] Video tutorials on agent design
 - [ ] Community agent marketplace
