@@ -422,7 +422,6 @@ The unique specialists who don't fit in a box.
 | 🧾 [Resume Tailor](specialized/resume-tailor.md) | Candidate-side resume optimization | JD mapping, ATS keyword alignment, experience-to-requirement matching |
 | 🧡 [Aging Parent Care Companion](specialized/healthcare-aging-parent-care-companion.md) | Family caregiver decision-support | Appointment/medication coordination, care-team comms, caregiver wellbeing (HIPAA-aligned) |
 | 🏛️ [Master Plan Architect](specialized/specialized-master-plan-architect.md) | Architectural teaching, red-team plan critique | Deep architecture teaching, risk critique, comprehensive Markdown implementation plans (no code execution) |
-| 🎧 [Focus Music Architect](specialized/specialized-focus-music-architect.md) | Instrumental focus-music prompt engineering, neuroacoustics | Soundscape architecture, BPM curves, binaural layers for generative audio models |
 
 ### 💵 Finance Division
 
